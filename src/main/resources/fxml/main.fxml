@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox prefHeight="219.0" prefWidth="400.0" spacing="10.0" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.codingsimply.apps.group_password_decrypter.controller.MainController">
+   <opaqueInsets>
+      <Insets/>
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+   </padding>
+   <Label text="Encrypted Text"/>
+   <TextField fx:id="encryptedTextField"/>
+   <Label text="Decrypted Text"/>
+   <TextField fx:id="decryptedTextField"/>
+   <Separator prefWidth="200.0"/>
+   <BorderPane prefHeight="200.0" prefWidth="200.0">
+      <right>
+         <Button alignment="BASELINE_RIGHT" mnemonicParsing="false" onAction="#decrypt" text="Decrypt"
+                 BorderPane.alignment="CENTER"/>
+      </right>
+      <left>
+         <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#exit" text="Exit"
+                 BorderPane.alignment="CENTER"/>
+      </left>
+      <bottom>
+         <Label alignment="BOTTOM_LEFT" fx:id="messageLabel" BorderPane.alignment="CENTER"/>
+      </bottom>
+   </BorderPane>
+</VBox>
