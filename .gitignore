@@ -3,3 +3,4 @@ target/
 out/
 
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
+group-password-decrypter.iml
